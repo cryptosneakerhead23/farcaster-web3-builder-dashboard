@@ -47,7 +47,10 @@ export function TokenBalance() {
     );
   }
 
-  const raw = (data ?? 0n) as bigint;
+  const raw = (data ?? BigInt(0)) as bigint;
+
+
+
   const formatted = formatUnits(raw, TOKEN_DECIMALS);
 
   return (
