@@ -2,6 +2,7 @@
 
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import { HabitCheckinCard } from '../components/HabitCheckinCard';
+import { TokenBalance } from '../components/TokenBalance';
 
 export default function HomePage() {
   return (
@@ -10,6 +11,7 @@ export default function HomePage() {
         Web3 Builder Dashboard (Sepolia)
       </h1>
       <ConnectButton />
+      <TokenBalance />
       <HabitCheckinCard />
     </main>
   );
